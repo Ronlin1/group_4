@@ -12,7 +12,7 @@
 
         <style>
             body{
-             background: #f6f6f6;
+             background: #f0ebed;
              color: black;
              font-family: 'Ubuntu', sans-serif;
              padding-top: 50px;
@@ -22,7 +22,7 @@
                 font-weight: 700;
             }
             .header-bar{
-                background-image: linear-gradient(to bottom right, #00bfad, #99a3d4);
+                background-image: linear-gradient(to bottom right, #00bfad, #00bfad);
                 display: flex;
                 justify-content: center;
                 color: #fff;
@@ -51,8 +51,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                background-color: #fff;
-                border-top: 1px solid #dfe4ea;
+                background-color:  #00bfad;
+                border-top: 1px solid #8f2d56;
                 overflow: hidden;
                 margin: auto 10%;
             }
@@ -65,7 +65,7 @@
                 margin-left: 10px;
             }
             .task-title a:visited{
-              color: #1d1d5b;
+              color: #8f2d56;
             }
             .task-complete-icon{
                 height: 15px;
@@ -97,7 +97,7 @@
             }
             .button {
                 border: none;
-                background-color: #c5c1c1;
+                background-color: #8f2d56;
                 color: #000000;
                 padding: 10px;
                 font-size: 14px;
@@ -107,19 +107,19 @@
                 border-radius: 5px;
             }
             .button:hover{
-                 background: #d2d2d2;
+                 background: #8f2d56;
                  transition: 0.4s ease-in-out;
                  opacity: 80%;
-                 background-color: #b6b6b6;
+                 background-color: #8f2d56;
                  transform: translateY(-1px);
              }
             .card-body {
-                background-image: linear-gradient(to bottom right, #00bfad, #99a3d4);
+                background-image: linear-gradient(to bottom right, #00bfad, #00bfad);
                 padding: 20px;
              }
             #add-link{
                 text-decoration: none;
-                color: #111156;
+                color: #00bfad;
                 cursor: pointer;
             }
              @media screen and (max-width:320px) {
@@ -140,7 +140,7 @@
                 <a href="{%url 'tasks'%}">All tasks</a>
             </div>
             <div>
-            <a href="{% url 'task-create' %}">+ Add a new task</a>
+            <a href="{% url 'task-create' %}"> Add a new task</a>
             </div>
                 
         </div>

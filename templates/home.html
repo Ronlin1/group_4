@@ -4,8 +4,8 @@
     <head> 
         <style> 
             .brand{
-                background-image: linear-gradient(to bottom right, #00bfad, #99a3d4);
-                margin: 0 auto;
+                background-image: linear-gradient(to bottom right, #00bfad); 
+                margin: 10 auto;
                 width: 500px; 
                 margin-bottom: 2px;
                 height: 50px;
@@ -13,14 +13,17 @@
         </style>
     </head>
     <body>
-        <div class="container-content" style="margin: 0 auto; padding-top:2px; width: 500px; height: 300px; background-image: linear-gradient(to bottom right, #00bfad, #99a3d4);">
+        <div class="container-content" style="margin: 0 auto; padding-top:2px; width: 500px; height: 300px; background-image: linear-gradient(to bottom right, #00bfad, #00bfad);">
                 <div class="message">
                     <b><h1>Welcome to Dooittt</h1></b>
+
                 </div>
             <div class="content">
-                <p><a href="{% url 'login' %}" style=" text-decoration: none; color: #00FFFF;">Log In</a></p>
-                <p><a href="{% url 'register' %}"  style=" text-decoration: none; color: #00FFFF;">Sign Up</a></p>
-            </div>   
+                <p><a href="{% url 'login' %}" style=" text-decoration: none; color: #000000;">Log In</a></p>
+
+                
+                <p><a href="{% url 'register' %}"  style=" text-decoration: none; color: #000000;">Sign Up</a></p>
+                </div>   
         </div>
     </body>
 </html>

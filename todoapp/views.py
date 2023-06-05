@@ -1,8 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views.generic.list import ListView
 from django.contrib import messages
-# Create your views here.
-
 from .models import Task
 from django.views.generic.detail import DetailView
 from django.views.generic import CreateView, UpdateView, DeleteView, FormView, TemplateView 
@@ -33,7 +31,7 @@ class RegisterPage(CreateView):
         user = form.save()
         if user is not None:
             login(self.request, user)
-            messages.success(self.request, 'Account created successfully!')
+            messages.success(self.request, 'Account has been successfully created!')
         return super().form_valid(form)
 
     def get(self, request, *args, **kwargs):
