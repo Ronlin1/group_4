@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+{% extends 'auth_base.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <h1>Register</h1>
+</div>
+
+<div class="card-body">
+    <!-- Form to register-->
+    <p style="color:blue;">For security reasons, Make sure your password is atleast 8 characters containing atleast: <br> 1 digit, 1uppercase letter and 1 symbol 
+    <br> Also make sure your password is not too similar to your username.
+    </p>
+    <form method="POST" >
+        {% csrf_token %}
+        <label>{{form.username.label}}</label>
+        {{form.username}}
+
+        <label>{{form.password1.label}}</label>
+        {{form.password1}}
+
+        <label>{{form.password2.label}}</label>
+        {{form.password2}}
+        <input style="margin-top:10px ;" class="button" type="submit" value="Register">
+    </form>
+    <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+    <p><a href="{% url 'home' %}">Back to Home</a></p>
+    <br>
+</div>
+
+
+
+
+{% endblock content %}
+</body>
+</html>

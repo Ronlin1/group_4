@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="task-entry">
+        <h2>{{ task.title }}</h2>
+        <h3>{{ task.description }}</h3>
+        <p>Date created = {{task.created}}</p>
+    </div>
+    <a href="{% url 'task-update' task.pk %}">+ Edit Task</a>
+    <p><a href="{% url 'task-delete' task.pk %}">+ Delete Task</a></p>
+{% endblock content %}

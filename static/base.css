@@ -1,0 +1,38 @@
+/* static/css/base.css */
+
+body{
+    background-color: rgb(180, 180, 180);
+;
+   
+  
+}
+.container-header{
+    display: flex;
+    background-color: rgb(230, 230, 230);
+
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+.brand{
+    color: #9e0000fd;
+    margin-left: 3%;
+
+}
+.container-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.message{
+    color: #3b0000;
+    text-align: center;  
+}
+
+.container-header div{
+    width: fit-content;
+    display: flex;
+    align-self: flex-end;
+  
+}

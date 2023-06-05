@@ -1,0 +1,13 @@
+<!-- templates/task.html -->
+{% extends 'base.html' %}
+{% block content %}
+   
+    {% for task in task_list %}
+        <div class="task-entry">
+            <h2><a href="{% url 'task' task.pk %}">{{ task.title }}</a></h2>
+           
+        </div>
+        
+    
+    {% endfor %}
+{% endblock %}
